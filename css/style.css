@@ -28,12 +28,8 @@ body {
     min-height: 100vh
 }
 img {
-    max-width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
     border-radius: 1rem;
-    margin-top: 3rem;
 }
 h1 {
     font-size: 2.5rem;
@@ -48,12 +44,11 @@ h2 {
     text-align: left;
 
 }
+.no-margin {
+    margin: 0;
+}
 .content {
     background-color: var(--Verydarkblue-cardBG);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     max-width: 40rem;
     max-height: 70rem;
     border-radius: 1rem;
@@ -70,8 +65,6 @@ h2 {
     display: flex;
     flex-direction: row-reverse;
     column-gap: 1rem;
-    align-items: flex-end;
-    justify-content: center;
 }
 .sub__2 {
     font-size: 2rem;
@@ -86,12 +79,10 @@ h2 {
     font-size: 2rem;
     font-weight: 300;
     color: var(--Softblue);
-    display: flex;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     column-gap: 1rem;
-    align-items: baseline;
-    max-width: 2rem;
-    margin: 0;
+    margin: 0 0 0 0;
     
 }    
 .flex {
@@ -99,4 +90,12 @@ h2 {
     flex-flow: column nowrap;
     align-items: flex-start;
     padding: 2rem;
+}
+.line {
+    border-bottom: 1px solid var(--Softblue);
+    margin-bottom: 2rem;
+}
+.profile {
+    max-width: 3rem;
+    margin-left: 1rem;
 }

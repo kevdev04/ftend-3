@@ -1,0 +1,76 @@
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Verydarkblue-mainBG: hsl(217, 54%, 11%);
+    --Verydarkblue-cardBG: hsl(216, 50%, 16%);
+    --Verydarkblue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --font: 'Outfit', sans-serif;
+}
+
+/* globals */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 16px; /* 1rem = 10px  */
+    background-color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+    min-height: 100vh
+}
+img {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin-top: 5rem;
+}
+h1 {
+    font-size: 2.5rem;
+    color: var(--White);
+    text-align:left;
+    margin-left: 2rem;
+}
+h2 {
+    font-size: 2rem;
+    color:var(--Softblue);
+    font-weight: 300;
+    text-align: left;
+    margin-left: 2rem;
+}
+.sub {
+    font-weight: 400;
+    color: var(--Cyan);
+    margin-left: 3rem;
+
+}
+.sub__2 {
+    font-size: 2rem;
+    color:var(--Softblue);
+    font-weight: 300;
+    text-align: left;
+    margin-left: 28rem;
+}
+.sub__3 {
+ 
+}    
+.content {
+    background-color: var(--Verydarkblue-cardBG);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40rem;
+    max-height: 60rem;
+    border-radius: 1rem;
+}

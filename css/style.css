@@ -19,7 +19,7 @@ html {
 }
 body {
     font-size: 16px; /* 1rem = 10px  */
-    background-color:aliceblue;
+    background-color:var(--Verydarkblue-mainBG);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +80,7 @@ h2 {
     font-weight: 300;
     color: var(--Softblue);
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
     column-gap: 1rem;
     margin: 0 0 0 0;
     
@@ -98,4 +98,26 @@ h2 {
 .profile {
     max-width: 3rem;
     margin-left: 1rem;
+    border-color: var(--White);
+    border-radius: 2rem;
+    border-style: solid;
+    border-width: .1rem;
+}
+.name {
+    color: var(--White);
+}
+
+/* HOVERS  */
+
+.brium:hover {
+    cursor: pointer;
+    background-image: url(/images/icon-view.svg);
+}
+.equilibrium:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.name:hover {
+    color: var(--Cyan);
+    cursor: pointer;
 }

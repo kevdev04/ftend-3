@@ -44,6 +44,12 @@ h2 {
     text-align: left;
 
 }
+.flex {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    padding: 2rem;
+}
 .no-margin {
     margin: 0;
 }
@@ -51,7 +57,7 @@ h2 {
     background-color: var(--Verydarkblue-cardBG);
     max-width: 40rem;
     max-height: 70rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 .twoparts {
     display: grid;
@@ -82,14 +88,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, auto);
     column-gap: 1rem;
-    margin: 0 0 0 0;
-    
-}    
-.flex {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    padding: 2rem;
+    margin: 0 0 0 0;   
 }
 .line {
     border-bottom: 1px solid var(--Softblue);
@@ -106,13 +105,11 @@ h2 {
 .name {
     color: var(--White);
 }
-
-/* HOVERS  */
-
-.brium:hover {
-    cursor: pointer;
-    background-image: url(/images/icon-view.svg);
+.brium {
+    width: 360px;
+    height: 360px;
 }
+/* HOVERS  */
 .equilibrium:hover {
     color: var(--Cyan);
     cursor: pointer;
@@ -120,4 +117,9 @@ h2 {
 .name:hover {
     color: var(--Cyan);
     cursor: pointer;
+}
+.brium:hover{
+   background-color: var(--Cyan);
+   border-radius: 1rem;
+   background-image: url(/images/icon-view.svg);
 }
